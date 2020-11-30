@@ -10,9 +10,11 @@
 
 #### Breve descrição do padrão:
 
-Chain of Responsibility é um padrão comportamental e como tal ele é responsável nas relações entre objetos, assim facilitando a comunicação entre as entidades em uma programação orientada a objetos. Sua principal função é evitar a dependência entre as entidades receptoras e as entidades solicitantes, pois cada entidade de solicitação tem uma série lógica que separa quais serão as entidades receptoras que serão manipuladas. Como seu conceito é ter uma relação em cadeia entre as entidades, ele não possui uma ideia de alto acoplamento, pois permite que outras entidades tenham a oportunidade de tratar uma solicitação.
+Chain of Responsibility é um padrão comportamental e como tal ele é responsável nas relações entre objetos, assim facilitando a comunicação entre as entidades em uma programação orientada a objetos. Sua principal função é evitar a dependência entre as entidades receptoras e as entidades solicitantes, pois cada entidade de solicitação tem uma série lógica que separa quais serão as entidades receptoras que serão manipuladas. Como seu conceito é ter uma relação em cadeia entre as entidades, ele não possui uma ideia de alto acoplamento, pois permite que outras entidades tenham a oportunidade de tratar solicitação.
 
-O padrão Chain of Responsibility representa uma solução para reduzir as dependências entre entidades, onde que seu maior propósito é permitir a navegação de dados entre diferentes objetos dentro de uma cadeia, dando a liberdade para a lógica que foi aplicada na entidade tratar a requisição e neutraliza a cadeia ou tratar a requisição e prosseguir com a cadeia, pois pode haver outra lógica importante em uma outra parte da cadeia.
+O padrão Chain of Responsibility representa uma solução para reduzir as dependências entre entidades, onde que seu maior propósito é permitir a navegação de dados entre diferentes objetos dentro de uma cadeia, dando a liberdade para a lógica que foi aplicada na entidade tratar a requisição e neutraliza a cadeia gerando um tipo de retorno ou tratar a requisição e prosseguir com a cadeia, assim só gerando algum tipo de retorno posteriormente.
+
+Geralmente o padrão é utilizado em sistemas que possuem rotinas de tomadas de decisões complexas e que normalmente precisam respeitar uma hierarquia ou fluxo de processamento, sendo que encadeamos a requisição de processamento por N objetos, um chamando o próximo e assim sucessivamente até que seja concluído o processamento, com sucesso ou falha.
 
 ## Problema
 
