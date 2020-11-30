@@ -8,7 +8,7 @@
 
 ## Chain of Responsibility
 
-Breve descrição do padrão:
+#### Breve descrição do padrão:
 
 Chain of Responsibility é um padrão comportamental e como tal ele é responsável nas relações entre objetos, assim facilitando a comunicação entre as entidades em uma programação orientada a objetos. Sua principal função é evitar a dependência entre as entidades receptoras e as entidades solicitantes, pois cada entidade de solicitação tem uma série lógica que separa quais serão as entidades receptoras que serão manipuladas. Como seu conceito é ter uma relação em cadeia entre as entidades, ele não possui uma ideia de alto acoplamento, pois permite que outras entidades tenham a oportunidade de tratar uma solicitação.
 
